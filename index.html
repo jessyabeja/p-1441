@@ -1,0 +1,57 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body> <center>
+        <div class="btn btn-warning heading">
+          <h3 class="btn btn-warning">AI PING-PONG GAME</h3>
+          <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Instructions</button>
+        </div>
+  
+  
+        <div>
+          <img src="" class="big_image">
+          <br><br>
+          <button onclick="startGame()" id="start" class="btn btn-success">Play Game</button>
+          <br><br>
+          <h3 id="status" class="btn btn-warning"></h3>
+          <br><br>
+        </div>
+        <div id="canvas"></div>
+        <div id="game_console"></div>
+
+        <div id="myModal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+  
+              <div class="modal-header">
+                <button class="close" data-dismiss="modal">&times;</button>
+                <h4>Instructions</h4>
+              </div>
+  
+              <div class="modal-body">
+                <p>AI-PING-PONG</p>
+                <img src="ss_ec4cd66badbbc1cf995dd9076ffef4cde5c335c0.1920x1080.jpg"  class="img-responsive instruction_image">
+                
+                <p>Hold the ball in your open palm, behind your end of the table. Toss at least 6” straight up, and strike it on the way down. It must hit your side of the table and then the other side. NOTE: Once the ball leaves the server's hand it is in play, and so counts as the receiver's point if the ball is missed or mis-hit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+
+        <script src="main.js"></script>
+    </body>
+</html>
